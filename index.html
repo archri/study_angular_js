@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="vendor/angular.js"></script>
+		<script src="scripts/vendor/angular.js"></script>
+		<script src="scripts/studyApp.js"></script>
 	</head>
-	<body ng-app>
-		10+20={{10+20}}
+	<body ng-app="studyApp">
+		<div ng-controller="studyController">
+			{{ studyVariable }}
+		</div>
 	</body>
 </html>

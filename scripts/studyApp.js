@@ -1,4 +1,10 @@
-var studyApp = angular.module("studyApp", []); 
-studyApp.controller("studyController", function($scope) {
-	$scope.studyVariable = "study variable";
-});
+var studyApp = angular
+		.module("studyApp", [])
+		.controller("studyController", function($scope) {
+			var employee = {
+				firstName: "Hristo",
+				lastName: "Hristov",
+				gender: "male"
+			}
+			$scope.employee = employee;
+		});

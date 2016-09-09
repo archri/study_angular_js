@@ -1,5 +1,4 @@
-var studyApp = angular.module("studyApp", []);
-var studyController = function($scope) {
+var studyApp = angular.module("studyApp", []); 
+studyApp.controller("studyController", function($scope) {
 	$scope.studyVariable = "study variable";
-}
-studyApp.controller("studyController", studyController);
+});

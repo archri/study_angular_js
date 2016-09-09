@@ -3,12 +3,13 @@
 	<head>
 		<script src="scripts/vendor/angular.js"></script>
 		<script src="scripts/studyApp.js"></script>
+		<link rel="stylesheet" href="styles/styles.css"></link>
 	</head>
 	<body ng-app="studyApp">
 		<div ng-controller="studyController">
-			{{ employee.firstName }}
-			{{ employee.lastName }}
-			{{ employee.gender }}
+			<div>Country: {{ country.name }}</div>
+			<div>Capital: {{ country.capital }}</div>
+			<div><img ng-src="{{ country.flag }}" alt="{{ country.name }} flag"/></div>
 		</div>
 	</body>
 </html>

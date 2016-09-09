@@ -7,9 +7,25 @@
 	</head>
 	<body ng-app="studyApp">
 		<div ng-controller="studyController">
-			<div>Country: {{ country.name }}</div>
-			<div>Capital: {{ country.capital }}</div>
-			<div><img ng-src="{{ country.flag }}" alt="{{ country.name }} flag"/></div>
+			<div>
+				<div>
+					Country:
+					<input ng-model="country.name"/>
+				</div>
+				<div>
+					Capital:
+					<input ng-model="country.capital"/>	
+				</div>
+			</div>
+			<br>
+			<div>
+				<div>
+					{{ country.name }}
+				</div>
+				<div>
+					{{ country.capital }}
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

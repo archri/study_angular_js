@@ -9,22 +9,13 @@
 		<div ng-controller="studyController">
 			<div>
 				<div>
-					Country:
-					<input ng-model="country.name"/>
+					Country: {{ country.name }}
 				</div>
 				<div>
-					Capital:
-					<input ng-model="country.capital"/>	
-				</div>
-			</div>
-			<br>
-			<div>
-				<div>
-					{{ country.name }}
-				</div>
-				<div>
-					{{ country.capital }}
-				</div>
+					Cities:
+				<ul>
+					<li ng-repeat="city in country.cities">{{ city }}</li>
+				</ul>
 			</div>
 		</div>
 	</body>

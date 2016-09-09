@@ -14,7 +14,12 @@
 				<div>
 					Cities:
 				<ul>
-					<li ng-repeat="city in country.cities">{{ city }}</li>
+					<li ng-repeat="city in country.cities">
+						{{ city.name }}
+						{{ city.inhabitants }}
+						<button ng-click="increaseInhabitants(city)">Increase</button>
+						<button ng-click="decreaseInhabitants(city)">Decrease</button>
+					</li>
 				</ul>
 			</div>
 		</div>
